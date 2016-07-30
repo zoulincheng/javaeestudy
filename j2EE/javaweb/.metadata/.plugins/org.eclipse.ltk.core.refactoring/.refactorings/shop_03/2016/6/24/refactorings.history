@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;itat.zttc.shop.test.BaseDao&apos; to &apos;BaseTest&apos;&#x0D;&#x0A;- Original project: &apos;shop_03&apos;&#x0D;&#x0A;- Original element: &apos;itat.zttc.shop.test.BaseDao&apos;&#x0D;&#x0A;- Renamed element: &apos;itat.zttc.shop.test.BaseTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BaseDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;itat.zttc.shop.test{BaseDao.java[BaseDao" matchStrategy="1" name="BaseTest" qualified="false" references="true" similarDeclarations="false" stamp="1465219125290" textual="false" version="1.0"/>
+</session>

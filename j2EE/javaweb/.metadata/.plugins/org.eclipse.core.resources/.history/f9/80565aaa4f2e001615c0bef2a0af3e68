@@ -1,0 +1,15 @@
+package com.zlkj.dao;
+
+public class PropertiesFactoryDao implements IFactoryDao {
+	private PropertiesFactoryDao factory = new PropertiesFactoryDao();
+	
+	private  PropertiesFactoryDao() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public Object getDao(String daoName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

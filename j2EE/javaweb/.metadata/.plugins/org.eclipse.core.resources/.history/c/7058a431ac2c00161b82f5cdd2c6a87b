@@ -1,0 +1,9 @@
+package itat.zttc.shop.model;
+
+public @interface ShopDi {
+	/**
+	 * 
+	 * @return
+	 */
+	String abc() default "";
+}

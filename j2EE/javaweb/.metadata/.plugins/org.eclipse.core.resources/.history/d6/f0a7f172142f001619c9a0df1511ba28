@@ -1,0 +1,25 @@
+package itat.zttc.mvc.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import sun.rmi.server.Dispatcher;
+
+public class HelloServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getSession().setAttribute("hello", "world");
+		//req.getRequestDispatcher(arg0);   参数是跳转到页面，自动增加上下文路径
+		Dispatcher dispatcher = req.getRequestDispatcher(/01/02.jsp);
+		resp.sendRedirect(req.getContextPath()+"/01/02.jsp");
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
+}

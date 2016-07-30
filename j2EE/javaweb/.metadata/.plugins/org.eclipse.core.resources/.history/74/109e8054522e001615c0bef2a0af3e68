@@ -1,0 +1,14 @@
+package com.zlkj.util;
+
+import java.util.Properties;
+
+public class PropertiesUtil {
+	private static Properties daoPro;
+	
+	public static Properties getDaopro(){
+		if (daoPro == null){
+			daoPro = new Properties();
+		}
+		
+	}
+}

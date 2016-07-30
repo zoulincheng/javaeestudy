@@ -1,0 +1,23 @@
+package itat.zttc.shop.test;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+import itat.zttc.shop.model.ShopDi;
+
+public class TestAnnotation {
+	
+	@ShopDi("userDao")
+	public void aa(){
+		
+	}
+	
+	@Test
+	public void test01(){
+		Method[] ms = this.getClass().getDeclaredMethods();
+		for(Method m:ms){
+			System.out.println(m.getName()+":"+m.isAnnotationPresent(ShopDi.class));
+		}
+	}
+}

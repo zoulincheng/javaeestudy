@@ -1,0 +1,15 @@
+package com.zlkj.test;
+
+import org.junit.Test;
+
+import com.zlkj.dao.IUserDao;
+
+public class TestUserDao {
+	private IUserDao userDao;
+	
+	
+	@Test 
+	public void testAdd(){
+		
+	}
+}

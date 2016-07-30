@@ -1,0 +1,34 @@
+package com.zlkj.util;
+
+import java.lang.reflect.Method;
+
+import com.zlkj.dao.IFactoryDao;
+import com.zlkj.model.ShopDi;
+
+public class DaoUtil {
+	public static final int SETTER_INDEX = 3;
+	public static void daoDi(Object objDi){
+		try {
+			Method[] methods = objDi.getClass().getDeclaredMethods();
+			for (Method method : methods){
+				if (method.isAnnotationPresent(ShopDi.class)){
+					ShopDi shopDi = method.getAnnotation(ShopDi.class);
+					String methodValue = shopDi.value();
+					if (methodValue == null || "".equals(methodValue.trim())){
+						methodValue = method.getName().substring(SETTER_INDEX);
+						methodValue = methodValue.substring(0, 1) + methodValue.substring(1);
+					}
+				}
+			}
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static IFactoryDao createDaoFactory(){
+		
+		return null;
+	}
+}

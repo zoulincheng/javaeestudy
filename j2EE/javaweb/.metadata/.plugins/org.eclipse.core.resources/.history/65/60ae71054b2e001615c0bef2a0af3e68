@@ -1,0 +1,19 @@
+package com.zlkj.test;
+
+import org.junit.Test;
+
+import com.zlkj.dao.IUserDao;
+import com.zlkj.model.User;
+
+public class TestUserDao {
+	private IUserDao userDao;
+	
+	
+	@Test 
+	public void testAdd(){
+		User user = new User();
+		user.setId(1);
+		user.setName("zhangsan");
+		user.setPassword("123");
+	}
+}

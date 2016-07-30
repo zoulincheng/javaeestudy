@@ -1,0 +1,9 @@
+package com.zlkj.test;
+
+import java.util.Properties;
+
+public class TestProperties {
+	public static void main(String[] args) {
+		Properties testpro = new Properties().load(inStream);
+	}
+}

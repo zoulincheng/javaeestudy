@@ -1,0 +1,37 @@
+package com.zlkj.test;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+import com.zlkj.model.ShopDi;
+
+public class TestAnnotation {
+	
+	@ShopDi("userDao")
+	public void test1(){
+		
+	}
+	
+	@ShopDi("addressDao")
+	public void test2(){
+		
+	}
+	
+	@ShopDi
+	public void test3(){
+		
+	}
+	
+	@Test
+	public void testAno(){
+		Method[] methods = this.getClass().getDeclaredMethods();
+		for (Method ms : methods){
+			if (ms.isAnnotationPresent(ShopDi.class)){
+				ShopDi shopDi = (ShopDi)ms.getAnnotation(ShopDi.class);
+				String value = shopDi.value();
+				System.out.println(value + ":"+ ms.getName());
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+package itat.zttc.mvc.servlet;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import itat.zttc.mvc.model.User;
+
+/**
+ * Servlet implementation class UserServlet
+ */
+public class UserServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UserServlet() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		User user = new User("zs", "张三", 22);
+		request.setAttribute("u", user);
+		List<User> users = new ArrayList<User>();
+		users.add(user);
+		users.add(new User("bajie", "八戒", 500));
+		users.add(new User("wukong", "悟空", 800));
+		users.add(new User("tangshen", "唐僧", 50));
+		users.add(new User("shaseng", "沙僧", 600));
+		request.setAttribute("users", users);
+		RequestDispatcher rdis = request.getRequestDispatcher("/WEB-INF/01/user.jsp");
+		rdis.forward(request, response);
+	}
+
+}

@@ -1,0 +1,8 @@
+package itat.zttc.shop.test;
+
+import itat.zttc.shop.model.ShopDi;
+
+public class TestAnnotation {
+	@ShopDi
+	
+}

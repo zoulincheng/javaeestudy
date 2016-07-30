@@ -1,0 +1,23 @@
+package com.zlkj.dao;
+
+import java.util.Map;
+
+public class PropertiesFactoryDao implements IFactoryDao {
+	private static PropertiesFactoryDao factory = new PropertiesFactoryDao();
+	private static Map<String, Object> daos = 
+	
+	private  PropertiesFactoryDao() {
+	}
+	
+	public static IFactoryDao getInstance(){
+		return factory;
+	}
+	
+	@Override
+	public Object getDao(String daoName) {
+		
+		
+		return factory;
+	}
+
+}

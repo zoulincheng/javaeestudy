@@ -1,0 +1,17 @@
+package itat.zttc.shop.model;
+
+public @interface ShopDi {
+	/**
+	 * 表示这个Annotation 加了一个属性值，如果没有定义default，必须在Annotation中定义
+	 * 这个属性
+	 * @ShopDi(abc="aaa")
+	 * @return
+	 */
+	String abc() default "";
+	
+	/**
+	 * 
+	 * @return
+	 */
+	String value() default "";
+}

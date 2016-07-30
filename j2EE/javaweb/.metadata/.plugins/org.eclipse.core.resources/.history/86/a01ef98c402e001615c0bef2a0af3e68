@@ -1,0 +1,22 @@
+package com.zlkj.test;
+
+import org.junit.Test;
+
+import com.zlkj.model.ShopDi;
+
+public class TestAnnotation {
+	@ShopDi
+	public void test1(){
+		
+	}
+	
+	@ShopDi
+	public void test2(){
+		
+	}
+	
+	@Test
+	public void testAno(){
+		
+	}
+}

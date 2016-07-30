@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="122" key="DIALOG_Y_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="829" key="DIALOG_X_ORIGIN"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="&lt;!-- &lt;!-- &#x09;&#x09;&#x09;&lt;id column=&quot;user_id&quot; property=&quot;id&quot;/&gt;" key="selection"/>
+		<list key="findhistory">
+			<item value="&lt;!-- &lt;!-- &#x09;&#x09;&#x09;&lt;id column=&quot;user_id&quot; property=&quot;id&quot;/&gt;"/>
+			<item value="&#x09;&#x09;&#x09;&lt;choose&gt;"/>
+			<item value="&lt;mapper namespace=&quot;itat.zttc.shop.model.User&quot;&gt;"/>
+			<item value="pagers"/>
+			<item value="shop"/>
+		</list>
+		<list key="replacehistory">
+			<item value="msg"/>
+		</list>
+	</section>
+</section>

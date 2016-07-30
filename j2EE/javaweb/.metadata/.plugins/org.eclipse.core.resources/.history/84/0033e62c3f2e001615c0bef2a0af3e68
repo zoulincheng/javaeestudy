@@ -1,0 +1,5 @@
+package com.zlkj.model;
+
+public @interface ShopDi {
+	
+}

@@ -1,0 +1,6 @@
+package com.zlkj.model;
+
+public @interface ShopDi {
+	String abc() default "";
+	String value() default "";
+}

@@ -1,0 +1,7 @@
+package com.zlkj.test;
+
+public class TestProperties {
+	public static void main(String[] args) {
+		
+	}
+}

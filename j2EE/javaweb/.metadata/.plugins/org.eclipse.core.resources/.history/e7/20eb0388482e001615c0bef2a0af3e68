@@ -1,0 +1,10 @@
+package com.zlkj.test;
+
+import com.zlkj.dao.IUserDao;
+
+public class TestUserDao {
+	private IUserDao userDao;
+	
+	
+	
+}

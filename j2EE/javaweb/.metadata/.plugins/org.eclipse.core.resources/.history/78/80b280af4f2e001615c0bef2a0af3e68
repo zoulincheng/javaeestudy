@@ -1,0 +1,13 @@
+package com.zlkj.dao;
+
+public class PropertiesFactoryDao implements IFactoryDao {
+	private PropertiesFactoryDao factory = new PropertiesFactoryDao();
+	
+	private  PropertiesFactoryDao() {
+	}
+	@Override
+	public Object getDao(String daoName) {
+		return null;
+	}
+
+}

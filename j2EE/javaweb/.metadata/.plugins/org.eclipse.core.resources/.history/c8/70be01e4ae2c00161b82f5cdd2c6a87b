@@ -1,0 +1,20 @@
+package itat.zttc.shop.test;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+import itat.zttc.shop.model.ShopDi;
+
+public class TestAnnotation {
+	
+	@ShopDi(value="avcde",abc=("aa"))
+	public void aa(){
+		
+	}
+	
+	@Test
+	public void test01(){
+		Method ms = this.getClass().getDeclaredAnnotations();
+	}
+}

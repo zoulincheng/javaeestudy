@@ -1,0 +1,24 @@
+package com.zlkj.test;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import com.zlkj.model.User;
+
+public class TestProperties {
+	public static void main(String[] args) {
+		Properties testpro = new Properties();
+		try {
+			testpro.load(TestProperties.class.getClassLoader().getResourceAsStream("test.properties"));
+			String name = testpro.getProperty("name");
+			String password = testpro.getProperty("password");
+			System.out.println(name + ":"+ password);
+			
+			String classS = testpro.getProperty(user);
+			Class clz = (User)Class.forName(classS).newInstance();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

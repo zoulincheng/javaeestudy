@@ -1,0 +1,29 @@
+package com.zlkj.dao;
+
+import java.util.List;
+
+import com.zlkj.model.User;
+
+public class UserDao implements IUserDao {
+
+	@Override
+	public void add(User user) {
+		System.out.println("add user");
+	}
+
+	@Override
+	public void delete(int id) {
+		System.out.println("delete user by id");
+	}
+
+	@Override
+	public void update(User user) {
+		System.out.println("update user");
+	}
+
+	@Override
+	public List<User> list() {
+		return null;
+	}
+
+}

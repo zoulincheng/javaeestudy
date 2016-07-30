@@ -1,0 +1,19 @@
+package com.zlkj.dao;
+
+import org.hamcrest.Factory;
+
+public class PropertiesFactoryDao implements IFactoryDao {
+	private PropertiesFactoryDao factory = new PropertiesFactoryDao();
+	
+	private  PropertiesFactoryDao() {
+	}
+	
+	public static IFactoryDao getInstance(){
+		return Factory;
+	}
+	@Override
+	public Object getDao(String daoName) {
+		return factory;
+	}
+
+}

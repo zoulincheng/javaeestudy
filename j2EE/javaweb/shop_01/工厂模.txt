@@ -1,0 +1,1 @@
+简单工厂模式违背了java的一个原则OCP（open close p）

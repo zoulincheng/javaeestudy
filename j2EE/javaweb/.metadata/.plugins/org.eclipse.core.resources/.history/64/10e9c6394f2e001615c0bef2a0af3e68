@@ -1,0 +1,5 @@
+package com.zlkj.dao;
+
+public interface IFactoryDao {
+	
+}

@@ -1,0 +1,10 @@
+package itat.zttc.shop.test;
+
+import itat.zttc.shop.model.ShopDi;
+
+public class TestAnnotation {
+	@ShopDi(aaa="123")
+	public void aa(){
+		
+	}
+}

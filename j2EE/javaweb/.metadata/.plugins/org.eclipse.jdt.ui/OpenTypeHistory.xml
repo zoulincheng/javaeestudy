@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=servlet01/F:\/apache-tomcat-6.0.45\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpServlet.class[HttpServlet" modifiers="1057" timestamp="1454324914000"/>
+<typeInfo handle="=jsp01/C:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.util.logging(Filter.class[Filter" modifiers="1537" timestamp="1459031138707"/>
+<typeInfo handle="=jsp01/F:\/apache-tomcat-6.0.45\/lib\/servlet-api.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1454324914000"/>
+<typeInfo handle="=msg02/src&lt;com.linzi.msg.dao{IMessageDao.java[IMessageDao" modifiers="513" timestamp="1462978643578"/>
+<typeInfo handle="=msg02/src&lt;com.linzi.msg.dao{ICommentDao.java[ICommentDao" modifiers="513" timestamp="1462115466893"/>
+<typeInfo handle="=reflect/src&lt;itat.zttc.model{IUserDao.java[IUserDao" modifiers="513" timestamp="1464701580731"/>
+<typeInfo handle="=shop_03/src&lt;itat.zttc.shop.dao{IFactoryDao.java[IFactoryDao" modifiers="513" timestamp="1464875947271"/>
+<typeInfo handle="=TestAnnotation/src&lt;com.zlkj.dao{IUserDao.java[IUserDao" modifiers="513" timestamp="1465479159835"/>
+<typeInfo handle="=TestAnnotation/src&lt;com.zlkj.dao{IFactoryDao.java[IFactoryDao" modifiers="513" timestamp="1465482865797"/>
+</typeInfoHistroy>

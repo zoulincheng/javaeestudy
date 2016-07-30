@@ -1,0 +1,54 @@
+package itat.zttc.mvc.servlet;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import itat.zttc.mvc.model.User;
+
+/**
+ * Servlet implementation class UserAdd
+ */
+public class UserAdd extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UserAdd() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		String username = request.getParameter("username");
+		String nickname = request.getParameter("nickname");
+		int age = Integer.parseInt(request.getParameter("age")); 
+		
+		/**
+		 * 此处用户存在到application
+		 */
+		List<User> users = (List<User>)request.getSession().getServletContext().getAttribute("storeUsers");
+		if (users == null){
+			users = new ArrayList<User>();
+		}
+		
+		
+	}
+
+}

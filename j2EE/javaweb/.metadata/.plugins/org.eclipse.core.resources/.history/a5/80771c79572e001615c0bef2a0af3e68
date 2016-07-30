@@ -1,0 +1,2 @@
+factory = com.zlkj.dao.PropertiesFactoryDao;
+userDao = com.zlkj.dao.User
